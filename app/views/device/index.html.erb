@@ -1,6 +1,6 @@
 <!-- login page start -->
 
-<!-- <div class="device-holder d-flex h-100">
+<div class="device-holder d-flex h-100">
     <div class="image-holder flex-fill">
         <img src="assets/device.jpg" alt="" class="image-responsive">
         <div class="image-caption">
@@ -25,9 +25,10 @@
                   </div>
               </div>
                <div class="mb-4">
-                  <div class="form-floating">
+                  <div class="form-floating password-holder">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
+                    <img src="assets/eye.svg" alt="" class="image-responsive eye-icon">
                   </div>
               </div>
               <div class="mb-4 form-check d-flex justify-content-between">
@@ -35,17 +36,40 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
-                <a href="#" class="forgot-link">Forgot Password ?</a>
+                <a href="#" class="forgot-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Forgot Password ?</a>
               </div>
               <button type="submit" class="btn btn-primary w-100">Continue</button>
             </form>
         </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-holder">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-body">
+                        <h2 class="modal-title" id="exampleModalLabel">Forgot Password</h2>
+                        <p class="modal-details">Password reset link will be sent to your verified email address</p>
+                          <div class="mb-4">
+                            <div class="form-floating mb-3 go-bottom">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="sample@example.com">
+                                <label for="name">Email address</label>
+                              </div>
+                          </div>
+                        <button type="button" class="btn btn-primary w-100">Submit</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
     </div>
-</div> -->
+</div>
+
 <!-- login page end -->
 
 
 <!-- sign up page start -->
+
 <div class="device-holder d-flex h-100">
     <div class="align-items-center d-flex flex-fill justify-content-center login-content">
       <div class="login-holder">
@@ -76,15 +100,17 @@
                 </div>
             </div>
             <div class="mb-4">
-                  <div class="form-floating">
+                  <div class="form-floating password-holder">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
+                    <img src="assets/eye.svg" alt="" class="image-responsive eye-icon">
                   </div>
               </div>
               <div class="mb-4">
-                  <div class="form-floating">
+                  <div class="form-floating password-holder">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
                     <label for="floatingPassword">Confirm Password</label>
+                    <img src="assets/eye.svg" alt="" class="image-responsive eye-icon">
                   </div>
               </div>
               <div class="mb-4">
@@ -110,9 +136,46 @@
             </div>
         </div>
     </div>
-
 </div>
+
 <!-- sign up page end -->
 
+
+
+<!-- reset-password start -->
+
+<div class="reset-password">
+  <div class="reset-password-holder">
+    <div class="banner">
+        <img src="assets/reset-banner.jpg" alt="" class="image-responsive">
+         <div class="caption-head">
+            <h2>Cleaning Services</h2>
+            <p>A one line description of company’s motto</p>
+          </div>
+    </div>
+    <div class="form-holder">
+        <h2>Password Reset</h2>
+      <div class="form-box">
+        <div class="mb-4">
+            <div class="form-floating password-holder">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="New Password">
+              <label for="floatingPassword">New Password</label>
+              <img src="assets/eye.svg" alt="" class="image-responsive eye-icon">
+            </div>
+        </div>
+        <div class="mb-4">
+            <div class="form-floating password-holder">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
+              <label for="floatingPassword">Confirm Password</label>
+              <img src="assets/eye.svg" alt="" class="image-responsive eye-icon">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- reset-password end -->
 
 
