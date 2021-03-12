@@ -2,24 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-
+$base-color: #136162;
 
 html,
 body{
 	height: 100%;
 	font-family: 'Roboto', sans-serif !important;
 	a{
-		color: #136162;
+		color: $base-color;
+		&:hover {
+	   	 color: $base-color;
+		}
 	}
 	.form-control{
 		color: rgba(5, 36, 37, 0.6);
-		font-size: 14px;
-		
+		font-size: 14px;		
 	}
 	input::placeholder{
 			color: rgba(5, 36, 37, 0.6);
 		}
 	.form-floating > {
+		.password-holder {
+			position: relative;
+			.eye-icon {
+
+			}
+		}
 	  .form-control {
 	    &:focus ~ label, &:not(:placeholder-shown) ~ label {
 	      opacity: 9;
@@ -63,6 +71,7 @@ body{
 
 	  label {
 	    padding: 0.6rem .75rem;
+	    color: rgba(5, 36, 37, 0.6);
 	  }
 
 	  .form-control, .form-select {
@@ -72,28 +81,47 @@ body{
 	}
 	.form-check {
 		.form-check-label {
-			color: #136162;
+			color: $base-color;
 		}
 	}
+	.password-holder {
+		position: relative;
+		.form-control {
+			padding-right: 44px;
+		}
+		.eye-icon {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			cursor: pointer;
+		}
+	}
+	.btn-primary:active,
+	.btn-primary:focus,
 	.btn-primary {
-		background-color: #136162;
-		border-color: #136162;
+		background-color: $base-color;
+		border-color: $base-color;
 		text-transform: uppercase;
+		min-height: 48px;
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
 		&:hover {
 			background: #fff;
-			color: #136162;
-			border-color: #136162;
+			color: $base-color;
+			border-color: $base-color;
 		}
 	}
 	.btn-light{
-		color: #136162;
+		color: $base-color;
 		text-transform: uppercase;
+		min-height: 48px;
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		&:hover {
-			background: #136162;
+			background: $base-color;
 			color: #fff;
-			border-color: #136162;
+			border-color: $base-color;
 		}
 	}
 }
@@ -142,8 +170,9 @@ body{
 	}
 	.login-content {
 		max-width: 600px;
-		    width: 100%;
+		width: 100%;
 		padding: 0 30px;
+		position: relative;
 		.login-holder {
 			max-width: 330px;
 			width: 100%;
@@ -156,6 +185,90 @@ body{
 				font-weight: 300px;
 			}
 		}
+		.modal {
+			position: absolute;
+			.modal-holder {
+				max-width: 417px;
+				margin: 50% auto;
+				.modal-content {
+					 border-radius: 12px;
+					 box-shadow: 0px 12px 17px #00000024, 0px 5px 22px #0000001f, 0px 7px 8px #00000033;
+					.modal-body {
+				       max-width: 413px;
+						padding: 40px;
+						.modal-title {
+							color: rgba(5, 36, 37, 0.87);
+							font-weight: normal;
+							font-size: 34px;
+							margin-bottom: 15px;
+							text-align: center;
+						}
+						.modal-details {
+							max-width: 335px;
+							text-align: center;
+							color: rgba(5, 36, 37, 0.87);
+							margin-bottom: 30px;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
 
+.reset-password {
+	.reset-password-holder {
+		.banner {
+			position: relative;
+			.caption-head {
+				font-size: 30px;
+				font-weight: 300;
+				line-height: 35px;
+				position: absolute;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 80px 5%;
+				color: #fff;
+				background: #13616399;
+				h2 {
+					font-size: 50px;
+					font-weight: 300;
+					line-height: 60px;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.form-holder {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			padding: 100px 0; 
+			flex-direction: column;
+			h2{
+				color: rgba(5, 36, 37, 0.87);
+				font-weight: normal;
+				font-size: 45px;
+				margin-bottom: 35px;
+				text-align: center;
+			}
+			.form-box {
+				max-width: 295px;
+				width: 100%;
+			}
+		}
+	}
+}
+/*please add forgot_password class on body tag */
+.forgot_password {
+	.modal-backdrop {
+		left: auto;
+		right: 0;
+		max-width: 600px;
 	}
 }

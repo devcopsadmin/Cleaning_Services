@@ -1,0 +1,351 @@
+<div class="dashboard">
+	<div id="siderbar" class="d-flex flex-column col">
+		<div class="d-flex flex-column justify-content-between p-3 section-header">
+			<div class="d-flex justify-content-between top-header">
+				<div class="logo-holder">
+				 	<img src="assets/logo.svg" alt="" class="image-responsive">
+				</div>
+				<div class="user-button">
+					<img src="assets/user-button.svg" alt="" class="image-responsive">
+				</div>
+			</div>
+			<div class="align-items-center bottom-header d-flex justify-content-between">
+				<div class="header-content">
+					<h3>District details</h3>
+				</div>
+				<div class="header-button">
+					<a href="#" class="btn btn-outline-secondary d-flex align-items-center text-uppercase" data-bs-toggle="modal" data-bs-target="#add_District">
+						<img src="assets/plus-icon.svg" alt="" class="image-responsive">
+						<span>
+							District
+						</span>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="inner-section h-100">
+
+			<!-- Select a district to view details start -->
+			<div class="d-flex align-items-center justify-content-center h-100 d-none">
+				<p>Select a district to view details</p>
+			</div>
+			<!-- Select a district to view details end -->
+			<div class="tabs-holder">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item" role="presentation">
+				    <button class="nav-link active py-3" id="Overview" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Overview</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+				    <button class="nav-link py-3" id="Admin" data-bs-toggle="tab" data-bs-target="#admin" type="button" role="tab" aria-controls="admin" aria-selected="false">Admins</button>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="Overview">
+					  <ul class="p-0">
+							<li class="border-bottom d-flex justify-content-between px-3 py-3">
+								<div class="name">
+									<span>District name</span>
+								</div>
+								<div class="value">
+									<span>Bostonville schools</span>
+								</div>
+							</li>
+							<li class="border-bottom d-flex justify-content-between px-3 py-3">
+								<div class="name">
+									<span>District code</span>
+								</div>
+								<div class="value">
+									<span>E1024</span>
+								</div>
+							</li>
+							<li class="border-bottom d-flex justify-content-between px-3 py-3">
+								<div class="name">
+									<span>Buildings</span>
+								</div>
+								<div class="value">
+									<span>15</span>
+								</div>
+							</li>
+							<li class="border-bottom d-flex justify-content-between px-3 py-3">
+								<div class="name">
+									<span>Rooms</span>
+								</div>
+								<div class="value">
+									<span>235</span>
+								</div>
+							</li>
+							<li class="border-bottom d-flex justify-content-between px-3 py-3">
+								<div class="name">
+									<span>Sq. ft.</span>
+								</div>
+								<div class="value">
+									<span>14756</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				  <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="Admin">
+				  	<ul class="p-0">
+						<li class="border-bottom d-flex justify-content-between p-2 pb-3 pt-3">
+							<div class="name">
+								<span>Abe Doe</span>
+							</div>
+							<div class="icon-holder d-flex justify-content-end">
+								<img src="assets/delete-icon.svg" alt="" class="image-responsive delete-icon">
+								<img src="assets/error-icon.svg" alt="" class="image-responsive error-icon">
+							</div>
+						</li>
+						<li class="border-bottom d-flex justify-content-between p-2 pb-3 pt-3">
+							<div class="name">
+								<span>Aaron Dmello</span>
+							</div>
+							<div class="icon-holder d-flex justify-content-end">
+								<img src="assets/delete-icon.svg" alt="" class="image-responsive delete-icon">
+								<img src="assets/error-icon.svg" alt="" class="image-responsive error-icon">
+							</div>
+						</li>
+						<li class="border-bottom d-flex justify-content-between p-2 pb-3 pt-3">
+							<div class="name">
+								<span>Akash Singh</span>
+							</div>
+							<div class="icon-holder d-flex justify-content-end">
+								<img src="assets/delete-icon.svg" alt="" class="image-responsive delete-icon">
+								<img src="assets/error-icon.svg" alt="" class="image-responsive error-icon">
+							</div>
+						</li>
+						<li class="d-flex justify-content-between p-2 pb-3 pt-3 add-admin-link">
+							<a href="#" class="align-items-center border-0 btn btn-outline-secondary d-flex m-auto text-uppercase" data-bs-toggle="modal" data-bs-target="#add_admin">
+								<img src="assets/plus-icon.svg" alt="" class="image-responsive">
+								<span>
+									ADD ADMIN
+								</span>
+							</a>
+						</li>
+					</ul>
+				  </div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="main-content w-100 p-4">
+		<div class="district-holder">
+			<div class="district-box col">
+				<div class="image-holder">
+					<img src="assets/district.png" alt="" class="w-100">
+				</div>
+				<div class="d-flex district-box-footer align-items-center px-4 w-100 py-2 justify-content-between">
+					<div class="content d-flex">
+						<div class="icon">
+							<img src="assets/arrow-right.svg" alt="" class="image-responsive">
+						</div>
+						<span>Bostonvılle schools</span>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="assets/dotted-icon.svg" alt="" class="image-responsive">
+					  </button>
+					  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">Edit details</a></li>
+					    <li><a class="dropdown-item" href="#">Delete district</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+			<div class="district-box col">
+				<div class="image-holder">
+					<img src="assets/district.png" alt="" class="w-100">
+				</div>
+				<div class="d-flex district-box-footer align-items-center px-4 w-100 py-2 justify-content-between">
+					<div class="content d-flex">
+						<div class="icon">
+							<img src="assets/arrow-right.svg" alt="" class="image-responsive">
+						</div>
+						<span>Bostonvılle schools</span>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="assets/dotted-icon.svg" alt="" class="image-responsive">
+					  </button>
+					  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">Edit details</a></li>
+					    <li><a class="dropdown-item" href="#">Delete district</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+			<div class="district-box col">
+				<div class="image-holder">
+					<img src="assets/district.png" alt="" class="w-100">
+				</div>
+				<div class="d-flex district-box-footer align-items-center px-4 w-100 py-2 justify-content-between">
+					<div class="content d-flex">
+						<div class="icon">
+							<img src="assets/arrow-right.svg" alt="" class="image-responsive">
+						</div>
+						<span>Bostonvılle schools</span>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="assets/dotted-icon.svg" alt="" class="image-responsive">
+					  </button>
+					  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">Edit details</a></li>
+					    <li><a class="dropdown-item" href="#">Delete district</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+			<div class="district-box col">
+				<div class="image-holder">
+					<img src="assets/district.png" alt="" class="w-100">
+				</div>
+				<div class="d-flex district-box-footer align-items-center px-4 w-100 py-2 justify-content-between">
+					<div class="content d-flex">
+						<div class="icon">
+							<img src="assets/arrow-right.svg" alt="" class="image-responsive">
+						</div>
+						<span>Bostonvılle schools</span>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="assets/dotted-icon.svg" alt="" class="image-responsive">
+					  </button>
+					  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">Edit details</a></li>
+					    <li><a class="dropdown-item" href="#">Delete district</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+			<div class="district-box col">
+				<div class="image-holder">
+					<img src="assets/district.png" alt="" class="w-100">
+				</div>
+				<div class="d-flex district-box-footer align-items-center px-4 w-100 py-2 justify-content-between">
+					<div class="content d-flex">
+						<div class="icon">
+							<img src="assets/arrow-right.svg" alt="" class="image-responsive">
+						</div>
+						<span>Bostonvılle schools</span>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="assets/dotted-icon.svg" alt="" class="image-responsive">
+					  </button>
+					  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">Edit details</a></li>
+					    <li><a class="dropdown-item" href="#">Delete district</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+			<div class="district-box col">
+				<div class="image-holder">
+					<img src="assets/district.png" alt="" class="w-100">
+				</div>
+				<div class="d-flex district-box-footer align-items-center px-4 w-100 py-2 justify-content-between">
+					<div class="content d-flex">
+						<div class="icon">
+							<img src="assets/arrow-right.svg" alt="" class="image-responsive">
+						</div>
+						<span>Bostonvılle schools</span>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="assets/dotted-icon.svg" alt="" class="image-responsive">
+					  </button>
+					  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item" href="#">Edit details</a></li>
+					    <li><a class="dropdown-item" href="#">Delete district</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal fade" id="add_District" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-holder">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="modal-title mb-4" id="exampleModalLabel">Add District</h2>
+              <div class="mb-4">
+                <div class="form-floating mb-3 go-bottom">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="District Name">
+                    <label for="name">District Name</label>
+                  </div>
+              </div>
+              <div class="logo-uploader mb-4">
+              	<div class="logo-uploader-header d-flex align-items-center justify-content-between mb-3">
+              		<div>District logo</div>
+	              	<a href="#" class="btn btn-outline-secondary d-flex align-items-center text-uppercase">
+						<span>
+							Select image
+						</span>
+					</a>
+              	</div>
+				<div class="logo-uploader-area">
+              		<p>Drag & drop the image in this section</p>
+              	</div>
+              </div>
+              <div class="mb-4">
+                <div class="form-floating mb-3 go-bottom">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="District code">
+                    <label for="name">District code</label>
+                  </div>
+              </div>
+            <button type="button" class="btn btn-primary text-uppercase">Create</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="add_admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-holder">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body">
+          	<ul class="admin-list m-0">
+          		<li>
+          			<div class="mb-3 d-flex justify-content-between">
+		                <div>
+		                  <label class="form-check-label" for="exampleCheck1">Aaron Dmello</label>
+		                </div>
+		                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		            </div>
+          		</li>
+          		<li>
+          			<div class="mb-3 d-flex justify-content-between">
+		                <div>
+		                  <label class="form-check-label" for="exampleCheck1">Akash Singh</label>
+		                </div>
+		                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		            </div>
+          		</li>
+          		<li>
+          			<div class="mb-3 d-flex justify-content-between">
+		                <div>
+		                  <label class="form-check-label" for="exampleCheck1">Abe Doe</label>
+		                </div>
+		                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		            </div>
+          		</li>
+          	</ul>
+          	<div class="d-flex justify-content-center align-items-center btn-holder">
+	            <button type="button" class="btn btn-primary text-uppercase">Save</button>
+	            <button type="button" class="btn btn-primary text-uppercase">Cancel</button>
+          	</div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
