@@ -244,3 +244,30 @@
 		}
 	}
 }
+
+#info-modal {
+	.modal-dialog {
+		max-width: 290px;
+		margin: 50vh auto 0;
+		.modal-content {
+			border: 1px solid rgba(5, 36, 37, 0.12);
+			.admin-info {
+				list-style: none;
+				color: rgba(5, 36, 37, 0.87);
+				padding-left: 15px;
+				.icon-holder {
+					margin-right: 15px;
+				}
+				.admin-email {
+					text-decoration: underline;
+				}
+				.admin-phone {
+					a{
+						color: rgba(5, 36, 37, 0.87);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

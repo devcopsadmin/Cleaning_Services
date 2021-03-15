@@ -93,7 +93,9 @@
 							</div>
 							<div class="icon-holder d-flex justify-content-end">
 								<img src="assets/delete-icon.svg" alt="" class="image-responsive delete-icon">
-								<img src="assets/error-icon.svg" alt="" class="image-responsive error-icon">
+								<a href="#" class="align-items-center border-0 d-flex m-auto text-uppercase" data-bs-toggle="modal" data-bs-target="#info-modal">
+									<img src="assets/error-icon.svg" alt="" class="image-responsive error-icon">
+								</a>
 							</div>
 						</li>
 						<li class="border-bottom d-flex justify-content-between p-2 pb-3 pt-3">
@@ -309,41 +311,41 @@
   </div>
 </div>
 
-<div class="modal fade" id="add_admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<div class="modal fade" id="info-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-holder">
     <div class="modal-dialog">
       <div class="modal-content">
           <div class="modal-body">
-          	<ul class="admin-list m-0">
+          	<ul class="admin-info m-0">
           		<li>
-          			<div class="mb-3 d-flex justify-content-between">
+          			<div class="mb-2">
 		                <div>
-		                  <label class="form-check-label" for="exampleCheck1">Aaron Dmello</label>
+		                  <h4 class="m-0">John Doe</h4>
 		                </div>
-		                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
 		            </div>
           		</li>
           		<li>
-          			<div class="mb-3 d-flex justify-content-between">
-		                <div>
-		                  <label class="form-check-label" for="exampleCheck1">Akash Singh</label>
+          			<div class="mb-2 d-flex">
+		                <div class="icon-holder">
+		                  <img src="assets/email-icon.svg" alt="" class="image-responsive">
 		                </div>
-		                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		                <div class="admin-email">
+		                	johndoe21@example.com
+		                </div>
 		            </div>
           		</li>
           		<li>
-          			<div class="mb-3 d-flex justify-content-between">
-		                <div>
-		                  <label class="form-check-label" for="exampleCheck1">Abe Doe</label>
+          			<div class="mb-2 d-flex">
+		                <div class="icon-holder">
+		                  <img src="assets/phone-number.svg" alt="" class="image-responsive">
 		                </div>
-		                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		                <div class="admin-phone">
+		                	<a href="tel: 9876543210 ">9876543210</a>
+		                </div>
 		            </div>
           		</li>
           	</ul>
-          	<div class="d-flex justify-content-center align-items-center btn-holder">
-	            <button type="button" class="btn btn-primary text-uppercase">Save</button>
-	            <button type="button" class="btn btn-primary text-uppercase">Cancel</button>
-          	</div>
           </div>
       </div>
     </div>
