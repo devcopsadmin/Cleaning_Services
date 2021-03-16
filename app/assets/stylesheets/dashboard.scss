@@ -7,7 +7,7 @@
 	height: 100%;
 	#siderbar {
 		border-right: 1px solid rgba(5, 36, 37, 0.12);
-		max-width: 420px;
+		min-width: 420px;
 		width: 100%;
 		.section-header {
 			min-height: 180px;
@@ -43,6 +43,8 @@
 		.inner-section {
 			color: rgba(5, 36, 37, 0.87);
 			letter-spacing: 0.18px;
+			max-height: 100vh;
+			overflow: scroll;
 			.tabs-holder {
 				.nav-tabs {
 					.nav-item {
