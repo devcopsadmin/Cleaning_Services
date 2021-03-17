@@ -114,5 +114,32 @@
 				}
 			}
 		}
+		.section-list-holder {
+		    margin-top: 20px;
+		    .section-list-item {
+				background: #F2F6F6;
+				border-radius: 12px;
+				padding: 15px;
+				margin-bottom: 15px;
+				&:hover,
+				&.active {
+					background: #B4DBDB;
+					cursor: pointer;
+				}
+				.header-button {
+					.btn {
+						&:hover {
+							background:transparent;
+						}
+					}
+				}
+				.section-list-header {
+					h5 {
+						color: #1C4F51;
+						margin: 0;
+					}
+				}
+		    }
+		}
 	}
 }
