@@ -252,13 +252,208 @@
 				  		</div>
 				  		<div class="tabs-inner-block">
 
-				  			<div class="section-block">
+				  				<!-- Select a section to view details  start -->
+				  			<div class="section-block d-none">
 				  				<div class="image-holder">
 				  					<object data="assets/section-img.jpg" width="320" height="244"> </object>
 				  					<h5>Select a section to view details</h5>
 				  				</div>
 				  			</div>
-
+			  				<!-- Select a section to view details end -->
+			  				<div class="section-details">
+			  					<div class="d-flex justify-content-between p15 section-details-header align-items-center">
+			  						<div class="section-header">
+			  							<h5>Section 1</h5>
+			  						</div>
+			  						<div class="d-flex header-button justify-content-between">
+			  							<a href="#" class="btn btn-outline-secondary d-flex align-items-center text-uppercase" data-bs-toggle="modal" data-bs-target="#add_Building">
+											<img src="assets/edit-icon.svg" alt="" class="image-responsive">
+										</a>
+										<a href="#" class="mx-3 btn btn-outline-secondary d-flex align-items-center text-uppercase" data-bs-toggle="modal" data-bs-target="#add_Building">
+											<img src="assets/delete-icon.svg" alt="" class="image-responsive">
+										</a>
+										<a href="#" class="btn btn-outline-secondary d-flex align-items-center text-uppercase" data-bs-toggle="modal" data-bs-target="#add_Building">
+											<img src="assets/plus-icon.svg" alt="" class="mr5 image-responsive">
+											<span>
+												People
+											</span>
+										</a>
+									</div>
+			  					</div>
+			  					<div class="section-details-content">
+			  						<ul class="d-flex justify-content-between nav nav-tabs mt-2" id="myTab" role="tablist">
+									  <li class="nav-item text-center col" role="presentation">
+									    <button class="nav-link w-100 active" id="Details-tab" data-bs-toggle="tab" data-bs-target="#Details" type="button" role="tab" aria-controls="Details" aria-selected="true">Details</button>
+									  </li>
+									  <li class="nav-item text-center col" role="presentation">
+									    <button class="nav-link w-100" id="Rooms-tab" data-bs-toggle="tab" data-bs-target="#Rooms" type="button" role="tab" aria-controls="Rooms" aria-selected="false">Rooms</button>
+									  </li>
+									  <li class="nav-item text-center col" role="presentation">
+									    <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+									  </li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+									  <div class="tab-pane fade show active" id="Details" role="tabpanel" aria-labelledby="Details-tab">
+									  	<div class="inner-tab-section-list-holder">
+									  		<ul class="section-list-block p-0 m-0">
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Cleaner
+									  				</div>
+									  				<div class="list-content">
+									  					John Doe
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Sq. ft.
+									  				</div>
+									  				<div class="list-content">
+									  					14756
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Desks
+									  				</div>
+									  				<div class="list-content">
+									  					235
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Windows
+									  				</div>
+									  				<div class="list-content">
+									  					29
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Trash cans
+									  				</div>
+									  				<div class="list-content">
+									  					20
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Paper towel dispensers
+									  				</div>
+									  				<div class="list-content">
+									  					20
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Toiler tissue dispensers
+									  				</div>
+									  				<div class="list-content">
+									  					25
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Hand soap dispensers
+									  				</div>
+									  				<div class="list-content">
+									  					29
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Hand sanitizer dispensers
+									  				</div>
+									  				<div class="list-content">
+									  					29
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					<strong>Estimated time to clean</strong>
+									  				</div>
+									  				<div class="list-content">
+									  					<strong>6 hrs 21 minutes</strong>
+									  				</div>
+									  			</li>
+									  		</ul>
+									  	</div>
+									  </div>
+									  <div class="tab-pane fade" id="Rooms" role="tabpanel" aria-labelledby="Rooms-tab">
+									  	<div class="inner-tab-section-list-holder room-block">
+									  		<ul class="section-list-block p-0 m-0">
+									  			<li class="border d-flex flex-column inner-tab-section-list-item justify-content-between m15">
+									  				<div class="list-label">
+									  					Room 103
+									  				</div>
+									  				<div class="room-details">
+									  					<span>400 sq. ft.</span>
+									  					<span>21 desks</span>
+									  					<span>08 windows</span>
+									  				</div>
+									  			</li>
+									  			<li class="border d-flex flex-column inner-tab-section-list-item justify-content-between m15">
+									  				<div class="list-label">
+									  					Room 103
+									  				</div>
+									  				<div class="room-details">
+									  					<span>400 sq. ft.</span>
+									  					<span>21 desks</span>
+									  					<span>08 windows</span>
+									  				</div>
+									  			</li>
+									  			<li class="border d-flex flex-column inner-tab-section-list-item justify-content-between m15">
+									  				<div class="list-label">
+									  					Room 103
+									  				</div>
+									  				<div class="room-details">
+									  					<span>400 sq. ft.</span>
+									  					<span>21 desks</span>
+									  					<span>08 windows</span>
+									  				</div>
+									  			</li>
+									  		</ul>
+									  	</div>
+									  </div>
+									  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									  	<div class="inner-tab-section-list-holder">
+									  		<ul class="section-list-block p-0 m-0">
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Abe Doe
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Bishan Gupta
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Bueran Hendricks
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Bunny Reagan
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Chris Morris
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Dom Bess
+									  				</div>
+									  			</li>
+									  		</ul>
+									  	</div>
+									  </div>
+									</div>
+			  					</div>
+			  				</div>
 				  		</div>
 				  	</div>
 			  </div>

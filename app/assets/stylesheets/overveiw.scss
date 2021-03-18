@@ -1,4 +1,12 @@
 .overveiw {
+	.btn.btn-outline-secondary{
+		color: #136162;
+		border: 1px solid rgba(5, 36, 37, 0.12);
+		&:hover{
+			border: 1px solid #136162;
+			background-color: #fff;
+		}
+	}
 	.titile-name {
 		color: #136162;
 		font-size: 16px;
@@ -76,6 +84,19 @@
 				}
 				.tabs-inner-block {
 					width: 100%;
+					.section-details {
+						height: 100%;
+						.section-details-header {
+							.section-header {
+								h5 {
+									color: rgba(5, 36, 37, 0.6);
+									letter-spacing: 0.15px;
+									font-weight: 500;
+									margin: 0;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -100,6 +121,46 @@
 				}
 			}
 		}
+		.inner-tab-section-list-holder {
+			max-height: calc(100% - 12em);
+			overflow: scroll;
+			.section-list-block {
+				list-style: none;
+				.inner-tab-section-list-item {
+					border-bottom: 1px solid rgba(5, 36, 37, 0.12);
+					padding: 11px 15px;
+					.list-label {
+						color: rgba(5, 36, 37, 0.87);
+						font-size: 16px;
+						font-weight: normal;
+					}
+					.list-content {
+						color: rgba(5, 36, 37, 0.87);
+						font-weight: 500;
+					}
+				}
+			}
+			&.room-block {
+				.inner-tab-section-list-item {
+					border-radius: 12px;
+					margin-bottom: 15px;
+					.list-label  {
+						color: #1C4F51;
+						font-weight: 500;
+						margin-bottom: 15px;
+					}
+					.room-details {
+						font-size: 14px;
+						color: rgba(5, 36, 37, 0.6);
+						margin-bottom: 5px;
+						span {
+							margin-right: 40px;
+
+						}
+					}
+				}
+			}
+		}
 		.section-block{
 			height: 100%;
 			display: flex;
@@ -116,6 +177,8 @@
 		}
 		.section-list-holder {
 		    margin-top: 20px;
+			max-height: calc(100% - 7em);
+			overflow: scroll;
 		    .section-list-item {
 				background: #F2F6F6;
 				border-radius: 12px;
@@ -141,5 +204,6 @@
 				}
 		    }
 		}
+
 	}
 }
