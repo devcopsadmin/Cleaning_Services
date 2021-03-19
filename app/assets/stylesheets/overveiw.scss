@@ -96,6 +96,18 @@
 								}
 							}
 						}
+						.report-header {
+							display: flex;
+							justify-content: space-between;
+							padding: 11px 15px 5px;
+							.list-content,
+							.list-label {
+								font-size: 14px;
+								text-transform: uppercase;
+								color: rgba(5, 36, 37, 0.38);
+								font-weight: 500;
+							}
+						}
 					}
 				}
 			}
@@ -200,6 +212,23 @@
 					h5 {
 						color: #1C4F51;
 						margin: 0;
+					}
+				}
+		    }
+		    &.report-holder {
+		    	.section-header {
+		    		h6 {
+		    			font-size: 32px;
+		    			color: #136162;
+		    			span {
+		    				font-size: 16px;
+		    			}
+		    		}
+		    	}
+		    	.section-list-header {
+					h5 {
+						color: rgba(5, 36, 37, 0.6);
+						font-size: 16px;
 					}
 				}
 		    }

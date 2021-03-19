@@ -142,8 +142,8 @@
 			  <div class="tab-pane fade show active" id="overveiw" role="tabpanel" aria-labelledby="Overveiw-tab">
 			  		<div class="tabs-inner-content-holder">
 				  		<div class="tabs-siderbar">
-
-				  			<div class="section-header">
+				  			<!-- overveiw inner tabs section start -->
+				  			<div class="section-header d-none">
 				  				<h6>Sections</h6>
 				  				<div class="header-button">
 									<a href="#" class="btn btn-outline-secondary d-flex align-items-center text-uppercase" data-bs-toggle="modal" data-bs-target="#add_Building">
@@ -154,7 +154,7 @@
 									</a>
 								</div>
 				  			</div>
-				  			<div class="section-list-holder">
+				  			<div class="section-list-holder d-none">
 				  				<div class="section-list-item active">
 				  					<div class="section-list-header d-flex justify-content-between mb20">
 				  						<h5>Section 1</h5>
@@ -248,11 +248,42 @@
 						  			</div>
 				  				</div>
 				  			</div>
+				  			<!-- overveiw inner tabs section end -->
 
+				  			<!-- report sidbar list section start -->
+				  			<div class="section-list-holder report-holder">
+				  				<div class="section-list-item active">
+				  					<div class="section-list-header d-flex justify-content-between mb20">
+				  						<h5>Total Area</h5>
+				  						<div class="d-flex icon-holder">
+											<object data="assets/arrow-right.svg" width="20" height="20"> </object>
+										</div>
+				  					</div>
+				  					<div class="section-header align-items-end">
+				  						<div>
+						  				<h6 class="mb-2">1250 <span>sq. ft.</span></h6>
+				  						</div>
+						  			</div>
+				  				</div>
+				  				<div class="section-list-item">
+				  					<div class="section-list-header d-flex justify-content-between mb20">
+				  						<h5>Total Rooms</h5>
+				  						<div class="d-flex icon-holder">
+											<object data="assets/arrow-right.svg" width="20" height="20"> </object>
+										</div>
+				  					</div>
+				  					<div class="section-header align-items-end">
+				  						<div>
+						  				<h6 class="mb-2">56 <span>rooms</span></h6>
+				  						</div>
+						  			</div>
+				  				</div>
+				  			</div>
+				  			<!-- report sidbar list section start -->
 				  		</div>
 				  		<div class="tabs-inner-block">
 
-				  				<!-- Select a section to view details  start -->
+				  			<!-- Select a section to view details  start -->
 				  			<div class="section-block d-none">
 				  				<div class="image-holder">
 				  					<object data="assets/section-img.jpg" width="320" height="244"> </object>
@@ -260,7 +291,9 @@
 				  				</div>
 				  			</div>
 			  				<!-- Select a section to view details end -->
-			  				<div class="section-details">
+
+			  				<!-- overview section details overveiw start  -->
+			  				<div class="section-details d-none">
 			  					<div class="d-flex justify-content-between p15 section-details-header align-items-center">
 			  						<div class="section-header">
 			  							<h5>Section 1</h5>
@@ -454,6 +487,164 @@
 									</div>
 			  					</div>
 			  				</div>
+			  				<!-- overview section details overveiw ens  -->
+
+			  				<!-- reports section details overveiw start  -->
+			  				<div class="section-details">
+			  					<div class="d-flex justify-content-between p15 section-details-header align-items-center">
+			  						<div class="section-header">
+			  							<h5>Total Rooms</h5>
+			  						</div>
+			  						<div class="d-flex header-button justify-content-between">
+										<a href="#" class="btn btn-outline-secondary d-flex align-items-center text-uppercase" data-bs-toggle="modal" data-bs-target="#add_Building">
+											<img src="assets/plus-icon.svg" alt="" class="mr5 image-responsive">
+											<span>
+												Custom Room
+											</span>
+										</a>
+									</div>
+			  					</div>
+			  					<div class="section-details-content">
+			  						<div class="report-header">
+			  							<div class="list-label">
+						  					Room Type
+						  				</div>
+						  				<div class="list-content">
+						  					Total Area
+						  				</div>
+			  						</div>
+									<div class="tab-content" id="myTabContent">
+									  <div class="tab-pane fade show active" id="Details" role="tabpanel" aria-labelledby="Details-tab">
+									  	<div class="inner-tab-section-list-holder">
+									  		<ul class="section-list-block p-0 m-0">
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Classrooms
+									  				</div>
+									  				<div class="list-content">
+									  					32
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Hallways
+									  				</div>
+									  				<div class="list-content">
+									  					07
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Restrooms
+									  				</div>
+									  				<div class="list-content">
+									  					06
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Offices
+									  				</div>
+									  				<div class="list-content">
+									  					04
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Gyms
+									  				</div>
+									  				<div class="list-content">
+									  					02
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Libraries
+									  				</div>
+									  				<div class="list-content">
+									  					01
+									  				</div>
+									  			</li>
+									  		</ul>
+									  	</div>
+									  </div>
+									  <div class="tab-pane fade" id="Rooms" role="tabpanel" aria-labelledby="Rooms-tab">
+									  	<div class="inner-tab-section-list-holder room-block">
+									  		<ul class="section-list-block p-0 m-0">
+									  			<li class="border d-flex flex-column inner-tab-section-list-item justify-content-between m15">
+									  				<div class="list-label">
+									  					Room 103
+									  				</div>
+									  				<div class="room-details">
+									  					<span>400 sq. ft.</span>
+									  					<span>21 desks</span>
+									  					<span>08 windows</span>
+									  				</div>
+									  			</li>
+									  			<li class="border d-flex flex-column inner-tab-section-list-item justify-content-between m15">
+									  				<div class="list-label">
+									  					Room 103
+									  				</div>
+									  				<div class="room-details">
+									  					<span>400 sq. ft.</span>
+									  					<span>21 desks</span>
+									  					<span>08 windows</span>
+									  				</div>
+									  			</li>
+									  			<li class="border d-flex flex-column inner-tab-section-list-item justify-content-between m15">
+									  				<div class="list-label">
+									  					Room 103
+									  				</div>
+									  				<div class="room-details">
+									  					<span>400 sq. ft.</span>
+									  					<span>21 desks</span>
+									  					<span>08 windows</span>
+									  				</div>
+									  			</li>
+									  		</ul>
+									  	</div>
+									  </div>
+									  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									  	<div class="inner-tab-section-list-holder">
+									  		<ul class="section-list-block p-0 m-0">
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Abe Doe
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Bishan Gupta
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Bueran Hendricks
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Bunny Reagan
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Chris Morris
+									  				</div>
+									  			</li>
+									  			<li class="inner-tab-section-list-item d-flex justify-content-between">
+									  				<div class="list-label">
+									  					Dom Bess
+									  				</div>
+									  			</li>
+									  		</ul>
+									  	</div>
+									  </div>
+									</div>
+			  					</div>
+			  				</div>
+			  				<!-- report section details overveiw ens  -->
+
 				  		</div>
 				  	</div>
 			  </div>
