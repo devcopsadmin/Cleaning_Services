@@ -870,7 +870,235 @@
 	  				</div>
 			  	</div>
 			  </div>
-			  <div class="tab-pane fade" id="People" role="tabpanel" aria-labelledby="People">People</div>
+			  <div class="tab-pane fade people-tab-holder" id="People" role="tabpanel" aria-labelledby="People">
+		  		<div class="tabs-inner-content-holder">
+			  		<div class="tabs-siderbar p-0">
+		  				<ul class="d-flex justify-content-between nav nav-tabs mt-2" id="myTab" role="tablist">
+						  <li class="nav-item text-center col" role="presentation">
+						    <button class="nav-link active w-100" id="Cleaners-tab" data-bs-toggle="tab" data-bs-target="#Cleaners" type="button" role="tab" aria-controls="Cleaners" aria-selected="true">Cleaners</button>
+						  </li>
+						  <li class="nav-item text-center col" role="presentation">
+						    <button class="nav-link w-100" id="supervisors-tab" data-bs-toggle="tab" data-bs-target="#supervisors" type="button" role="tab" aria-controls="supervisors" aria-selected="false">supervisors</button>
+						  </li>
+						</ul>
+			  			<div class="section-list-holder mt-0">
+							<div class="tab-content" id="myTabContent">
+							  <div class="tab-pane fade show active" id="Cleaners" role="tabpanel" aria-labelledby="Cleaners-tab">
+							  	<ul class="p-0 m-0">
+							  		<li class="list-item">
+							  			<div class="item-label">Abe Doe</div>
+							  		</li>
+							  		<li class="list-item">
+							  			<div class="item-label">Aaron Dmello</div>
+							  		</li>
+							  		<li class="list-item">
+							  			<div class="item-label">Akash Singh</div>
+							  		</li>
+							  		<li class="list-item">
+							  			<div class="item-label">Avi Bale</div>
+							  		</li>
+							  		<li class="list-item">
+							  			<div class="item-label">Bishan Gupta</div>
+							  		</li>
+							  		<li class="list-item active">
+							  			<div class="item-label">Bonnie Smith</div>
+							  		</li>
+							  		<li class="list-item">
+							  			<div class="item-label">Akash Singh</div>
+							  		</li>
+							  		<li class="list-item">
+							  			<div class="item-label">Avi Bale</div>
+							  		</li>
+							  	</ul>
+							  </div>
+							  <div class="tab-pane fade" id="supervisors" role="tabpanel" aria-labelledby="supervisors-tab">
+							  	supervisors
+							  </div>
+							</div>
+				  		</div>
+			  		</div>
+		  			<div class="tabs-inner-block">
+			  			<!-- Select a people to view details  start -->
+			  			<div class="section-block">
+			  				<div class="image-holder">
+			  					<object data="assets/people-select-img.svg" width="320" height="244"> </object>
+			  					<h5>Select a cleaner/supervisor to view details</h5>
+			  				</div>
+			  			</div>
+		  				<!-- Select a people to view details end -->
+
+		  				<div class="people-details-holder  d-none">
+		  					<div class="header">
+		  						<h5>Inspection Result - <span>Bonnie Smith</span></h5>
+		  					</div>
+		  					<div class="accordion" id="accordionExample">
+							  <div class="accordion-item mb-4">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							      	<div class="d-flex justify-content-between w-100">
+								        <div class="inspections-sub-details">
+								        	<div class="date-label">
+								        		Mon, 12/01/21 3:40 PM
+								        	</div>
+								        	<h4>Classroom 102</h4>
+								        	<div class="inspection-name">cleaned by Tyler Harris</div>
+								        </div>
+								        <div class="points-holder pr30">
+					  						<div class="points-label">Total Points</div>
+					  						<h3 class="points-value">05/06</h3>
+					  					</div>
+							      	</div>
+							      </button>
+							    </h2>
+							    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							      <div class="accordion-body">
+							        Accordion Item #1
+							      </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item mb-4">
+							    <h2 class="accordion-header" id="headingTwo">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							        <div class="d-flex justify-content-between w-100">
+								        <div class="inspections-sub-details">
+								        	<div class="date-label">
+								        		Mon, 12/01/21 3:40 PM
+								        	</div>
+								        	<h4>Classroom 102</h4>
+								        	<div class="inspection-name">cleaned by Tyler Harris</div>
+								        </div>
+								        <div class="points-holder pr30">
+					  						<div class="points-label">Total Points</div>
+					  						<h3 class="points-value">04/06</h3>
+					  					</div>
+							      	</div>
+							      </button>
+							    </h2>
+							    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							      <div class="accordion-body p-0">
+							        <div class="inspections-table pt-3">
+							        	<div class="d-flex header-block justify-content-between mb-3 px-3">
+							        		<div class="header-label">PARAMETER</div>
+							        		<div class="header-label">RESULT</div>
+							        		<div class="header-label">POINTS</div>
+							        	</div>
+							        	<div class="content-block">
+							        		<ul>
+							        			<li class="">
+							        				<div class="content-text p-3">
+								        				<div class="content-parameter">
+								        					1. Floors swept and mopped
+								        				</div>
+								        				<div class="content-result">
+								        					PASS
+								        				</div>
+								        				<div class="content-points">
+								        					01
+								        				</div>
+							        				</div>
+							        			</li>
+							        			<li class="">
+							        				<div class="content-text p-3">
+								        				<div class="content-parameter">
+								        					2. Desktops cleaned and disinfected
+								        				</div>
+								        				<div class="content-result">
+								        					PASS
+								        				</div>
+								        				<div class="content-points">
+								        					01
+								        				</div>
+								        			</div>
+							        			</li>
+							        			<li class="fail">
+							        				<div class="content-text p-3">
+								        				<div class="content-parameter">
+								        					3. High dusting completed
+								        				</div>
+								        				<div class="content-result">
+								        					FAIL
+								        				</div>
+								        				<div class="content-points">
+								        					00
+								        				</div>
+								        			</div>
+							        				<div class="content-inner-block">
+							        					<h6>Inspection notes & images</h6>
+							        					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel et nulla ut amet porttitor dolor. Aenean vivamus tristique tincidunt est in porttitor.</p>
+							        					<div class="d-flex image-holder justify-content-between">
+							        						<div class="image-block">
+							        							<object data="assets/classroom-1.jpg" width="160" height="120"> </object>
+							        						</div>
+							        						<div class="image-block">
+							        							<object data="assets/classroom-2.jpg" width="160" height="120"> </object>
+							        						</div>
+							        						<div class="image-block">
+							        							<object data="assets/classroom-3.jpg" width="160" height="120"> </object>
+							        						</div>
+							        					</div>
+							        				</div>
+							        			</li>
+							        			<li class="">
+							        				<div class="content-text p-3">
+								        				<div class="content-parameter">
+								        					4. Trash emptied
+								        				</div>
+								        				<div class="content-result">
+								        					PASS
+								        				</div>
+								        				<div class="content-points">
+								        					01
+								        				</div>
+								        			</div>
+							        			</li>
+							        			<li class="">
+							        				<div class="content-text p-3">
+								        				<div class="content-parameter">
+								        					5. Glass cleaned
+								        				</div>
+								        				<div class="content-result">
+								        					PASS
+								        				</div>
+								        				<div class="content-points">
+								        					01
+								        				</div>
+								        			</div>
+							        			</li>
+							        		</ul>
+							        	</div>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item mb-4">
+							    <h2 class="accordion-header" id="headingThree">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							         <div class="d-flex justify-content-between w-100">
+								        <div class="inspections-sub-details">
+								        	<div class="date-label">
+								        		Mon, 12/01/21 3:40 PM
+								        	</div>
+								        	<h4>Classroom 102</h4>
+								        	<div class="inspection-name">cleaned by Tyler Harris</div>
+								        </div>
+								        <div class="points-holder pr30">
+					  						<div class="points-label">Total Points</div>
+					  						<h3 class="points-value">05/06</h3>
+					  					</div>
+							      	</div>
+							      </button>
+							    </h2>
+							    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							      <div class="accordion-body">
+							       	Accordion Item #3
+							      </div>
+							    </div>
+							  </div>
+							</div>
+		  				</div>
+	  				</div>
+			  	</div>
+			  </div>
 			</div>
 		</div>
 	</div>

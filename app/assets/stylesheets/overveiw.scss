@@ -72,6 +72,24 @@
 			height: calc(100vh - 22vh);
 			.tab-pane {
 				height: inherit;
+				&.people-tab-holder {
+					.tabs-siderbar {
+						.tab-pane {
+							ul {
+								.list-item {
+									border-bottom: 1px solid rgba(5, 36, 37, 0.12);
+									padding: 11px 15px;
+									color: rgba(5, 36, 37, 0.87);
+									&.active,
+									&:hover {
+										background: #B4DBDB;
+										cursor: pointer;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 			.tabs-inner-content-holder {
 				display: flex;
@@ -109,6 +127,7 @@
 							}
 						}
 					}
+					.people-details-holder,
 					.inspections-details {
 							padding: 15px;
 							max-height: calc(100% - 4em);
